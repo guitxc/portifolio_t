@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Guilherme Sandoli">
+    <meta name="description"
+        content="Portfólio Pessoal do Guilherme Sandoli, desenvolvedor Full Stack especializado em criar experiências digitais incríveis. Conheça meus projetos e entre em contato.">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Guilherme Sandoli">
+    <link rel="icon" type="iamge/svg+xml" href="./assets/img/favicon.svg">
+    <title>Portifólio do Guilherme Sandoli</title>
+</head>
+
+<body>
+    <!-- Cabeçalho da Página-->
+    <header>
+        <div>
+            <!--Titulo do Cabeçalho-->
+            <a href="index.html" id="titulo">Portifólio</a>
+
+            <!-- Menu de Navegação-->
+            <nav>
+                <ul class="menu-list">
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#about">Sobre</a></li>
+                    <li><a href="#projects">Projetos</a></li>
+                    <li><a href="#contact">Contatos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <!-- Seção Principal da Página-->
+    <main>
+        <!-- Seção Hero-->
+        <section id="hero" class="section-container hero-container">
+
+            <article>
+                <span>👋 Olá, eu sou o Guilherme</span>
+                <h1>Desenvolvedor Full Stack</h1>
+                <p>Transformo ideias em código e crio experiências digitais incríveis.</p>
+                <div class="buttons-container">
+                    <a href="#contact" class="botao">Entre em contato</a>
+                    <a href="#about" class="botao-outline">Saiba mais...</a>
+                </div>
+
+            </article>
+            <figure class="hero-image">
+                <img src="./assets/img/foto_dev_man.svg" alt="Foto do Autor do Site" class="float-animation"
+                    width="300px">
+            </figure>
+        </section>
+        <!-- Seção Sobre Mim-->
+        <section id="about" class="section-container about-container">
+
+            <figure class="about-image">
+                <img src="./assets/img/avatar_dev_man.svg" alt="Foto - Perfil Autor do Site" width="300px">
+            </figure>
+            <article class="about-content">
+                <h2>Sobre mim</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptates earum porro placeat velit
+                    doloribus vero facere nemo itaque veritatis sunt, quibusdam repellat reiciendis eveniet! Explicabo
+                    minus reiciendis quae maiores quasi.</p>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt consequuntur obcaecati quibusdam
+                    architecto fugit in odio quaerat doloremque molestias saepe at mollitia, reiciendis, beatae amet!
+                    Aliquam quidem veritatis laboriosam reiciendis.</p>
+                <div class="about-buttons-data">
+                    <div class="buttons-container">
+                        <a href="#" target="_blank" class="botao">Github</a>
+                        <a href="#" target="_blank" class="botao-outline">Currículo</a>
+                    </div>
+                    <div class="data=container">
+                        <div class="data-item">
+                            <span class="data-number">100</span>
+                            <span class="data-label">Seguidores</span>
+                        </div>
+                        <div class="data-item">
+                            <span class="data-number">10</span>
+                            <span class="data-label">Repositórios</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+        <!-- Seção Projetos-->
+        <section id="projects" class="section-container projects-container">
+            <h2>Meus Projetos</h2>
+
+            <!-- Swiper Container -->
+            <div class="swiper projects-swiper">
+                <div class="swiper-wrapper">
+
+                    <figure class="swiper-slide">
+
+                        <article class="project-card">
+
+                            <!-- Ícone da Tecnologia padrão do projeto -->
+                            <figure class="project-image">
+                                <img src="./assets/icons/languages/github.svg" alt="Ícone do GitHub" width="100px">
+                            </figure>
+
+                            <!-- Conteúdo do Projeto -->
+                            <div class="project-content">
+
+                                <h3>Projeto GitHub</h3>
+                                <p>Projeto desenvolvido no GitHub</p>
+
+                                <!-- Tags do Projeto -->
+                                <div class="project-tags">
+                                    <span class="tag">GitHub</span>
+                                </div>
+
+                                <!-- Links do Projeto -->
+                                <div class="project-buttons">
+                                    <a href="#" target="_blank" class="botao botao-sm">
+
+                                        GitHub
+                                    </a>
+                                    <a href="#" target="_blank" class="botao-outline botao-sm">
+
+                                        Deploy
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </article>
+
+                </div>
+
+            </div>
+
+            <!-- Botões de Navegação -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+
+            <!-- Paginação -->
+            <div class="swiper-pagination"></div>
+
+            </div>
+
+
+        </section>
+        <!-- Seção Contato-->
+        <section id="contact" class="section=container contact-container">
+            <article>
+                <h2>Entre em contato</h2>
+                <p>Sinta-se à vontade para entrar em contato comigo</p>
+
+                <div class="social-container">
+                    <a href="https://www.linkedin.com/in/guisandoli/" target="_blank" class="social-icon" aria-label="Linkedin"><img src="./assets/icons/social/linkedin.svg" alt="Link do Linkedin"></a>
+                    <a href="https://github.com/guitxc" target="_blank" class="social-icon" aria-label="Github"><img src="./assets/icons/social/github.svg" alt="Link do Github"></a>
+                </div>
+            </article>
+            <form id="formulario">
+
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
+                <span id="erro-nome"></span>
+                
+                <label for="email">E-mail</label>
+                <input id="email" name="email" type="text" placeholder="Digite o seu email">
+                <span id="erro-email"></span>
+
+                <label for="assunto">Assuton</label>
+                <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
+                <span id="erro-assunto"></span>
+
+                <label for="messagem">Mensagem</label>
+                <textarea name="mensagem" id="mensagem" placeholder="Digite sua mensagem"></textarea>
+                <span id="erro-mensagem"></span>
+                <button class="botao" type="submit">Enviar Mensagem</button>
+
+            </form>
+
+        </section>
+    </main>
+    <!-- Rodapé da Página-->
+    <footer>
+        Desenvolvido por Guilherme Sandoli - 2026
+    </footer>
+</body>
+
+</html>
