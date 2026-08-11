@@ -672,12 +672,6 @@ footer {
         font-size: var(--text-lg);
     }
 
-    @media screen and (max-width: 768px) {
-        .menu-list {
-            display: none;
-        }
-    }
-
     .hero-container {
         flex-direction: column-reverse;
         gap: var(--spacing-lg);
@@ -820,4 +814,119 @@ footer {
         width: 5rem;
         height: 5rem;
     }
-}
+  }
+
+  @media screen and (max-width: 768px) {
+    header {
+      height: 4rem;
+    }
+
+    .menu-content {
+      padding: 0 var(--spacing-sm);
+    }
+
+    .menu-list {
+      display: none;
+    }
+
+    .section-container {
+      width: 100%;
+      padding: var(--spacing-lg) var(--spacing-sm);
+    }
+
+    .hero-container {
+      min-height: auto;
+      padding-top: var(--spacing-xl);
+      padding-bottom: var(--spacing-xl);
+    }
+
+    .hero-content,
+    .hero-image {
+      width: 100%;
+    }
+
+    .hero-content h1 {
+      font-size: var(--text-2xl);
+    }
+
+    .hero-content p,
+    .about-content p,
+    .contact-info p {
+      font-size: var(--text-base);
+    }
+
+    .buttons-container {
+      flex-wrap: wrap;
+    }
+
+    .hero-container .botao,
+    .hero-container .botao-outline,
+    .about-buttons-data .botao,
+    .about-buttons-data .botao-outline {
+      flex: 1 1 10rem;
+    }
+
+    .about-container {
+      width: auto;
+      margin: var(--spacing-lg) var(--spacing-sm);
+      padding: var(--spacing-md);
+    }
+
+    .about-content h2,
+    .projects-container h2,
+    .contact-info h2 {
+      font-size: var(--text-2xl);
+    }
+
+    .about-content p {
+      text-align: left;
+    }
+
+    .about-buttons-data {
+      align-items: stretch;
+    }
+
+    .about-buttons-data .buttons-container {
+      width: 100%;
+    }
+
+    .data-container {
+      gap: var(--spacing-md);
+    }
+
+    .projects-container {
+      margin: var(--spacing-lg) 0;
+    }
+
+    .projects-swiper {
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .project-card {
+      min-height: 28rem;
+      height: auto;
+    }
+
+    .contact-container {
+      width: 100%;
+    }
+
+    .social-container {
+      gap: var(--spacing-md);
+    }
+
+    .social-icon {
+      width: 4rem;
+      height: 4rem;
+    }
+
+    form input,
+    form textarea {
+      font-size: var(--text-base);
+    }
+
+    footer {
+      padding: var(--spacing-lg) var(--spacing-sm);
+    }
+  }

@@ -1,289 +1,186 @@
 <!doctype html>
 <html lang="pt-br">
-	<head>
 
-    <!-- Fontes do Google -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<head>
 
-    <!-- Fonte do Google - Poppins -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <!-- Fontes do Google -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-		<meta charset="UTF-8" />
-		<meta
-			name="viewport"
-			content="width=device-width, initial-scale=1.0"
-		/>
+  <!-- Fonte do Google - Poppins -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
-		<meta name="author" content="Guilherme Sandoli" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-		<meta
-			name="description"
-			content="Portfólio Pessoal do Guilherme Sandoli, 
+  <meta name="author" content="Guilherme Sandoli" />
+
+  <meta name="description" content="Portfólio Pessoal do Guilherme Sandoli, 
                 desenvolvedor Full Stack especializado em criar experiências 
-                digitais incríveis. Conheça meus projetos e entre em contato."
-		/>
+                digitais incríveis. Conheça meus projetos e entre em contato." />
 
-		<meta name="robots" content="index, follow" />
+  <meta name="robots" content="index, follow" />
 
-		<link
-			rel="icon"
-			type="image/svg+xml"
-			href="./assets/img/favicon.svg"
-		/>
+  <link rel="icon" type="image/svg+xml" href="./assets/img/favicon.svg" />
 
-    <!-- CSS principal da página -->
-    <link rel="stylesheet" href="./assets/css/styles.css">
+  <!-- SWIPER CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
 
-		<title>Portfólio do Guilherme</title>
-	</head>
-	<body>
-		<!-- Cabeçalho da Página -->
-		<header>
+  <!-- CSS principal da página -->
+  <link rel="stylesheet" href="./assets/css/styles.css">
 
-			<div class="menu-content">
+  <title>Portfólio do Guilherme</title>
+</head>
 
-				<!-- Título do cabeçalho -->
-				<a href="index.html" id="titulo">Portfólio</a>
+<body>
+  <!-- Cabeçalho da Página -->
+  <header>
 
-				<!-- Menu de Navegação -->
-				<nav>
-					<ul class="menu-list">
-						<li><a href="#hero">Início</a></li>
-						<li><a href="#about">Sobre</a></li>
-						<li><a href="#projects">Projetos</a></li>
-						<li><a href="#contacts">Contatos</a></li>
-					</ul>
-				</nav>
+    <div class="menu-content">
 
-			</div>
+      <!-- Título do cabeçalho -->
+      <a href="index.html" id="titulo">Portfólio</a>
 
-		</header>
+      <!-- Menu de Navegação -->
+      <nav>
+        <ul class="menu-list">
+          <li><a href="#hero">Início</a></li>
+          <li><a href="#about">Sobre</a></li>
+          <li><a href="#projects">Projetos</a></li>
+          <li><a href="#contacts">Contatos</a></li>
+        </ul>
+      </nav>
 
-		<!-- Seção Principal da Página -->
-		<main>
+    </div>
 
-			<!-- Seção Hero -->
-			<section id="hero" class="section-container hero-container">
+  </header>
 
-        <!-- Boas Vindas -->
-        <article class="hero-content">
+  <!-- Seção Principal da Página -->
+  <main>
 
-          <span>👋 Olá, eu sou o Guilherme</span>
-          <h1>Desenvolvedor Full Stack</h1>
-          <p>Transformo ideias em
-              código e crio experiências digitais incríveis.</p>
+    <!-- Seção Hero -->
+    <section id="hero" class="section-container hero-container">
 
-          <div class="buttons-container">
-            <a href="#contact" class="botao">Entre em contato</a>
-            <a href="#about" class="botao-outline">Saiba mais...</a>
-          </div>
+      <!-- Boas Vindas -->
+      <article class="hero-content">
 
-        </article>
+        <span>👋 Olá, eu sou o Guilherme</span>
+        <h1>Desenvolvedor Full Stack</h1>
+        <p>Transformo ideias em
+          código e crio experiências digitais incríveis.</p>
 
-        <!-- Imagem da Seção Hero -->
-        <figure class="hero-image">
-          <img 
-            src="./assets/img/fotoProfissional.png"
-            alt="Foto do autor do site"
-            class="float-animation"
-          >
-        </figure>
+        <div class="buttons-container">
+          <a href="#contacts" class="botao">Entre em contato</a>
+          <a href="#about" class="botao-outline">Saiba mais...</a>
+        </div>
 
-      </section>
+      </article>
 
-			<!-- Seção Sobre mim -->
-			<section id="about" class="section-container about-container">
+      <!-- Imagem da Seção Hero -->
+      <figure class="hero-image">
+        <img src="./assets/img/fotoProfissional.png" alt="Foto do autor do site" class="float-animation">
+      </figure>
 
-          <!-- Imagem da Seção About -->
-          <figure class="about-image">
-            <img
-              src="./assets/img/fotoProfissional1.png"
-              alt="Foto - Perfil do autor do site"
-            >
-          </figure>
+    </section>
 
-          <!-- Conteúdo da Seção About -->
-          <article class="about-content">
-            <h2>Sobre mim</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur 
-              adipisicing elit. Hic minima quidem perferendis 
-              ut eius similique autem consectetur quisquam. 
-              Ducimus at molestias illo obcaecati animi pariatur 
-              voluptate eligendi fugit cupiditate nemo?
-            </p>
-            <p>
-              Mussum Ipsum, cacilds vidis litro abertis. 
-              Nec orci ornare consequat. Praesent lacinia 
-              ultrices consectetur. Sed non ipsum felis. 
-              Admodum accumsan disputationi eu sit. 
-              Vide electram sadipscing et per. 
-              Em pé sem cair, deitado sem dormir, 
-              sentado sem cochilar e fazendo pose. 
-              Praesent malesuada urna nisi, 
-              quis volutpat erat hendrerit non. 
-              Nam vulputate dapibus.
-            </p>
+    <!-- Seção Sobre mim -->
+    <section id="about" class="section-container about-container">
 
-            <!-- Links (GitHub + Curriculo) e Dados do GitHub-->
-            <div class="about-buttons-data">
 
-              <!-- Links -->
-              <div class="buttons-container">
-                <a href="#" target="_blank" class="botao">GitHub</a>
-                <a href="#" target="_blank" class="botao-outline">Currículo</a>
-              </div>
+    </section>
 
-              <!-- Dados - Repósitório Github -->
-              <div class="data-container">
+    <!-- Seção de Projetos -->
+    <section id="projects" class="section-container projects-container">
 
-                <!-- Numero de Seguidores -->
-                <div class="data-item">
-                  <span class="data-number">100</span>
-                  <span class="data-label">Seguidores</span>
-                </div>
+      <h2>Meus últimos projetos</h2>
 
-                <!-- Numero de Repositórios Públicos -->
-                <div class="data-item">
-                  <span class="data-number">10</span>
-                  <span class="data-label">Repositórios</span>
-                </div>
+      <!-- Swiper Container -->
+      <div class="swiper projects-swiper">
 
-              </div>
+        <div class="swiper-wrapper">
 
-            </div>
-          </article>
-
-      </section>
-
-			<!-- Seção de Projetos -->
-			<section id="projects" class="section-container projects-container">
-
-        <h2>Meus Projetos</h2>
-
-        <!-- Swiper Container -->
-        <div class="swiper projects-swiper">
-
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-
-              <article class="project-card">
-
-                <!-- Ícone da Tecnologia padrão do projeto -->
-                <figure class="project-image">
-                  <img src="./assets/icons/languages/github.svg"
-                      alt="Ícone do GitHub"
-                  >
-                </figure>
-
-                <!-- Conteúdo do Projeto -->
-                <div class="project-content">
-
-                  <h3>Projeto GitHub</h3>
-                  <p>Projeto desenvolvido no GitHub</p>
-
-                  <!-- Tags do Projeto -->
-                  <div class="project-tags">
-                    <span class="tag">GitHub</span>
-                  </div>
-
-                  <!-- Links do Projeto -->
-                  <div class="project-buttons">
-                    <a href="#" target="_blank" class="botao botao-sm">
-                      GitHub
-                    </a>
-                    <a href="#" target="_blank" class="botao-outline botao-sm">
-                      Deploy
-                    </a>
-                  </div>
-
-                </div>
-
-              </article>
-
-            </div>
-
-          </div>
-
-          <!-- Botões de Navegação -->
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-
-          <!-- Paginação -->
-          <div class="swiper-pagination"></div>
+        
 
         </div>
 
-      </section>
+        <!-- Botões de Navegação -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
 
-			<!-- Seção de Contatos -->
-			<section id="contacts" class="section-container contact-container">
+        <!-- Paginação -->
+        <div class="swiper-pagination"></div>
 
-        <!-- Redes Sociais -->
-        <article class="contact-info">
+      </div>
 
-          <h2>Entre em contato</h2>
-          <p>Sinta-se à vontade para entrar em contato comigo</p>
+    </section>
 
-          <!-- Links para as Redes Sociais -->
-          <div class="social-container">
+    <!-- Seção de Contatos -->
+    <section id="contacts" class="section-container contact-container">
 
-            <a href="https://www.linkedin.com/in/guisandoli/" target="_blank" class="social-icon" aria-label="LinkedIn">
-              <img
-                src="./assets/icons/social/linkedin.svg"
-                alt="Link para o LinkedIn"
-              >
-            </a>
+      <!-- Redes Sociais -->
+      <article class="contact-info">
 
-            <a href="https://github.com/guitxc" target="_blank" class="social-icon" aria-label="GitHub">
-              <img
-                src="./assets/icons/social/github.svg"
-                alt="Link para o GitHub"
-              >
-            </a>
+        <h2>Entre em contato</h2>
+        <p>Sinta-se à vontade para entrar em contato comigo</p>
 
-            <a href="https://www.instagram.com/gui.snd" target="_blank" class="social-icon" aria-label="Instagram">
-              <img
-                src="./assets/icons/social/instagram.svg"
-                alt="Link para o Instagram"
-              >
-            </a>
+        <!-- Links para as Redes Sociais -->
+        <div class="social-container">
 
-          </div>
-        </article>
+          <a href="https://www.linkedin.com/in/guisandoli/" target="_blank" class="social-icon" aria-label="LinkedIn">
+            <img src="./assets/icons/social/linkedin.svg" alt="Link para o LinkedIn">
+          </a>
+
+          <a href="https://github.com/guitxc" target="_blank" class="social-icon" aria-label="GitHub">
+            <img src="./assets/icons/social/github.svg" alt="Link para o GitHub">
+          </a>
+
+          <a href="https://www.instagram.com/gui.snd" target="_blank" class="social-icon" aria-label="Instagram">
+            <img src="./assets/icons/social/instagram.svg" alt="Link para o Instagram">
+          </a>
+
+        </div>
+      </article>
 
 
-        <!-- Formulário de Contato -->
-        <form id="formulario">
+      <!-- Formulário de Contato -->
+      <form id="formulario" action="https://formsubmit.co/22975ca200a794dda0c93c1955810172" method="POST">
 
-          <label for="nome">Nome</label>
-          <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
-          <span id="erro-nome"></span>
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/success.html">
+        <input type="hidden" name="_captcha" value="false">
 
-          <label for="email">E-mail</label>
-          <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
-          <span id="erro-email"></span>
+        <label for="nome">Nome</label>
+        <input id="nome" name="nome" type="text" placeholder="Digite o seu nome completo">
+        <span id="erro-nome"></span>
 
-          <label for="assunto">Assunto</label>
-          <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
-          <span id="erro-assunto"></span>
+        <label for="email">E-mail</label>
+        <input id="email" name="email" type="text" placeholder="Digite o seu e-mail">
+        <span id="erro-email"></span>
 
-          <label for="mensagem">Mensagem</label>
-          <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
-          <span id="erro-mensagem"></span>
+        <label for="assunto">Assunto</label>
+        <input id="assunto" name="assunto" type="text" placeholder="Digite o assunto da mensagem">
+        <span id="erro-assunto"></span>
 
-          <button class="botao" type="submit">Enviar Mensagem</button>
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite a sua mensagem"></textarea>
+        <span id="erro-mensagem"></span>
 
-        </form>
+        <button class="botao" type="submit">Enviar Mensagem</button>
 
-      </section>
-		</main>
+      </form>
 
-		<!-- Rodapé da Pàgina -->
-		<footer>
-      Desenvolvido por Rafael Queiróz - 2026
-    </footer>
-	</body>
+    </section>
+  </main>
+
+  <!-- Rodapé da Pàgina -->
+  <footer>
+    Desenvolvido por Guilherme Sandoli - 2026
+  </footer>
+
+  <!-- SWIPER JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="./assets/js/script.js"></script>
+
+</body>
+
 </html>
