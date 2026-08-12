@@ -56,6 +56,61 @@ const projetosReserva = [
   },
 ];
 
+const featuredProjects = [
+  {
+    titulo: 'Blog Pessoal — API REST',
+    descricao: 'API REST em Java/Spring Boot, com Spring Security, JWT, JPA e MySQL, 15 endpoints, testes com JUnit, deployada em produção.',
+    imagem: './assets/img/capaBlogPessoal.png',
+    tecnologias: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'MySQL', 'Swagger'],
+    linkGithub: 'https://github.com/guitxc/blog_pessoal',
+    linkDemo: 'https://seu-link-deploy.com',
+  },
+  {
+    titulo: 'API REST de Biblioteca',
+    descricao: 'API de biblioteca (CRUD) construída em Python com Flask.',
+    imagem: './assets/img/capaBiblioteca.png',
+    tecnologias: ['Python', 'Flask'],
+    linkGithub: 'https://github.com/guitxc/flask-library-api',
+    linkDemo: null,
+  },
+];
+
+function renderFeaturedProjects() {
+  const container = document.querySelector('.featured-projects-grid');
+  if (!container) return;
+
+  container.innerHTML = featuredProjects.map(project => {
+    const badges = project.tecnologias
+      .map(tech => `<span class="tag">${tech}</span>`)
+      .join('');
+
+    const botaoDemo = project.linkDemo
+      ? `<a href="${project.linkDemo}" target="_blank" rel="noopener noreferrer" class="botao botao-sm">Ver Demo</a>`
+      : '';
+
+    const imagemProjeto = project.imagem || './assets/img/capaBlogPessoal.png';
+
+    return `
+      <article class="featured-project-card">
+        <figure class="featured-project-image">
+          <img src="${imagemProjeto}" alt="Screenshot de ${project.titulo}">
+        </figure>
+        <div class="featured-project-body">
+          <div>
+            <h3>${project.titulo}</h3>
+            <p>${project.descricao}</p>
+          </div>
+          <div class="project-tags">${badges}</div>
+          <div class="project-buttons">
+            <a href="${project.linkGithub}" target="_blank" rel="noopener noreferrer" class="botao botao-sm">GitHub</a>
+            ${botaoDemo}
+          </div>
+        </div>
+      </article>
+    `;
+  }).join('');
+}
+
 async function getAboutGithub() {
     try {
         if (!about) {
@@ -83,23 +138,10 @@ async function getAboutGithub() {
           <article class="about-content">
             <h2>Sobre mim</h2>
             <p>
-              Lorem ipsum dolor sit amet consectetur 
-              adipisicing elit. Hic minima quidem perferendis 
-              ut eius similique autem consectetur quisquam. 
-              Ducimus at molestias illo obcaecati animi pariatur 
-              voluptate eligendi fugit cupiditate nemo?
+              Sou desenvolvedor Back-End em formação, com foco em Java e Spring Boot, além de experiência com Python e Flask. Atualmente curso Análise e Desenvolvimento de Sistemas na USJT e estou finalizando o Bootcamp Full Stack Java da Generation Brasil, onde aprofundo APIs REST, Spring Security, JWT e boas práticas de desenvolvimento back-end.
             </p>
             <p>
-              Mussum Ipsum, cacilds vidis litro abertis. 
-              Nec orci ornare consequat. Praesent lacinia 
-              ultrices consectetur. Sed non ipsum felis. 
-              Admodum accumsan disputationi eu sit. 
-              Vide electram sadipscing et per. 
-              Em pé sem cair, deitado sem dormir, 
-              sentado sem cochilar e fazendo pose. 
-              Praesent malesuada urna nisi, 
-              quis volutpat erat hendrerit non. 
-              Nam vulputate dapibus.
+              Antes de migrar para desenvolvimento, atuei por 7 meses como Instrutor de Programação e Robótica, ensinando lógica de programação e desenvolvimento de jogos — experiência que me deu uma base sólida em explicar conceitos técnicos com clareza e me tornou um profissional colaborativo. Hoje aplico essa mesma didática nos meus próprios projetos, documentando cada um a fundo e buscando sempre entender o "porquê" por trás do código, não só o "como".
             </p>
 
             <!-- Links (GitHub + Curriculo) e Dados do GitHub-->
@@ -478,4 +520,5 @@ formulario.addEventListener('submit', function (event) {
 
 
 getAboutGithub();
+renderFeaturedProjects();
 getProjectsGithub();
