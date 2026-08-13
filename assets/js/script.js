@@ -63,7 +63,7 @@ const featuredProjects = [
     imagem: './assets/img/capaBlogPessoal.png',
     tecnologias: ['Java', 'Spring Boot', 'Spring Security', 'JWT', 'MySQL', 'Swagger'],
     linkGithub: 'https://github.com/guitxc/blog_pessoal',
-    linkDemo: 'https://seu-link-deploy.com',
+    linkDemo: 'https://blogpessoal-83dh.onrender.com',
   },
   {
     titulo: 'API REST de Biblioteca',
